@@ -1,0 +1,70 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper,left=2.0cm,right=2.0cm,top=2cm,bottom=2.5cm]{geometry} %controlo de tamaho do papel e margens
+\usepackage{array}
+\usepackage{indentfirst}
+\usepackage{graphicx} %incluir figuras
+\usepackage{float} %complemento para figuras(tamanhos)
+\usepackage{import} %para poder dividir o texto em varios ficheiros
+\usepackage{setspace} \onehalfspacing %controlo do espaço entre linhas
+\usepackage{chemformula}
+\usepackage{appendix}
+
+\title{
+{\Large \textbf{IPCA}}\\
+{\large Escola Superior Tecnologia}\\
+\includegraphics[width=0.5\textwidth]{Figuras/logo.png}\\
+{\Large \textbf{Projeto de Desenvolvimento de Software}}\\
+\vspace{1cm}
+{\large Joel Jonassi, nº19698}\\
+{\large Joel Phillippe Melo Figueiras, nº20809}\\
+{\large Nuno Miguel Carvalho Araújo, nº 20078}\\
+{\large Tiago João Coelho Azevedo, nº21153}\\
+{\large Vitor Hugo Sá Machado, nº21158}\\
+\vspace{0.35cm}
+\vspace{1.25cm}
+{\normalsize Professor Nuno Feixa Rodrigues}\\
+{\normalsize Professor Óscar Ribeiro}\\
+}
+\author{\vspace{-5ex}}
+\date{\vspace{-5ex}
+\footer{\begin{center}2021/2022\end{center}}
+}
+%----------
+
+
+\renewcommand{\figurename}{Figura}
+\renewcommand{\contentsname}{Indíce}
+\renewcommand{\chaptername}{Capítulo}
+%----------
+
+%Controlo cabeçalho e rodapé
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\setlength{\headheight}{15pt}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhf{}
+\rhead{}
+\lhead{}
+\rfoot{\thepage}
+%----------
+\begin{document}
+\pagenumbering{roman} %começa com numero romano para as paginas que nao sao do indice
+\maketitle 
+\newpage
+
+\tableofcontents    %cria a lista de conteudos
+\newpage
+
+\include{2.introdução}
+\include{3.requisitos-funcionais}
+\include{4.requisitos_não-funcionais}
+\include{5.mockups}
+\include{6.backlog}
+\include{7.sprints}
+\include{8.testes_unitarios}
+\include{20.conclusão}
+\appendix
+
+\end{document}
+

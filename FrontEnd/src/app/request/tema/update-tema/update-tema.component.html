@@ -1,0 +1,23 @@
+<div class="divider">
+    <app-sidebar></app-sidebar>
+    <div class="container border px-5 my-5 bg-dark bg-gradient">
+        <br>
+        <h1 class="text-info">Atualizar Tema</h1>
+        <form class="my-5">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="id" name="id" type="text" [(ngModel)]="TemaOBJ.id" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="id">Id do Tema</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="nome" name="nome" type="text" [(ngModel)]="TemaOBJ.nome" [ngModelOptions]="{standalone: true}" required>
+                <label for="nome">Nome do Tema</label>
+            </div>
+            <div class="d-grid">
+                <br><br>
+                <button class="btn bg-success " id="createButton" type="submit" (click)="putTema()">Atualizar</button>
+                <br>
+                <button class="btn bg-danger" id="cancelButton" (click) = "cancel()">Cancelar</button>
+            </div>
+        </form>
+    </div> 
+</div>

@@ -1,0 +1,11 @@
+Drop table if exists public."Utilizador" cascade;
+Drop table if exists public."Tema" cascade;
+Drop table if exists public."TipoProcesso" cascade;
+Drop table if exists public."Processo" cascade;
+Drop table if exists public."Estado" cascade;	
+Drop table if exists public."FaseProcessual" cascade;	
+Drop table if exists public."Codigo" cascade;
+Drop table if exists public."Artigo" cascade;
+Drop table if exists public."TipoPrazo" cascade;
+Drop table if exists public."PrazoCodigo" cascade;
+Drop table if exists public."Prazo" cascade;

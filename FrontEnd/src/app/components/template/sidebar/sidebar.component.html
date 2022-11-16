@@ -1,0 +1,54 @@
+<div class="container-fluid sidebar">
+    <div class="bg-dark" style="width: 30vh;">
+        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img src="../../assets/img/logotipo.png" width="30%" height="40%" />
+                <span class="fs-4 link-light">JuriTech</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a routerLink="/inicio" routerLinkActive="active" class="bi bi-house-door nav-link link-light" aria-current="page"> Início</a>
+            </li>
+            <li>
+                <a routerLink="/get-processo" routerLinkActive="active" class="bi bi-bank nav-link link-light" aria-current="page"> Processos</a>
+            </li>
+            <li>
+                <a routerLink="/get-tipoprocesso" routerLinkActive="active" class="bi bi-card-list nav-link link-light" aria-current="page"> Tipo de Processos</a>
+            </li>
+            <li>
+                <a routerLink="/get-faseprocessual" routerLinkActive="active" class="bi bi-calendar3-range nav-link link-light" aria-current="page"> Fases Processuais</a>
+            </li>
+            <li>
+                <a routerLink="/get-artigos" routerLinkActive="active" class="bi bi-book nav-link link-light" aria-current="page"> Artigos</a>
+            </li>
+            <li>
+                <a routerLink="/get-temas" routerLinkActive="active" class="bi bi-bookmark-check nav-link link-light" aria-current="page"> Temas</a>
+            </li>
+            <li>
+                <a routerLink="/get-prazos" routerLinkActive="active" class="bi bi-calendar-date nav-link link-light" aria-current="page"> Prazos</a>
+            </li>
+            <!-- <li>
+                <a routerLink="/empty" routerLinkActive="active" class="bi bi-briefcase nav-link link-light disabled" aria-current="page"> Documentos</a>
+            </li>
+            <li>
+                <a routerLink="/empty" routerLinkActive="active" class="bi bi-calendar-date nav-link link-light disabled" aria-current="page"> Calendário</a>
+            </li> -->
+            </ul>
+            <hr>
+            <div class="dropdown user">
+                <div ngbDropdown class="dropdown">
+                    <img src="../../assets/img/avatar.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <button ngbDropdownToggle class="btn btn-secondary" type="button" id="dropdownMenuButton1" aria-expanded="false">
+                        {{UsersOBJ.nome}}
+                    </button>
+                    <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+                        <!-- <li><a ngbDropdownItem class="bi bi-bell disabled" routerLink="/"> Ação 1</a></li>
+                        <li><a ngbDropdownItem class="bi bi-bell disabled" routerLink="/"> Ação 2</a></li> -->
+                        <li><a ngbDropdownItem class="bi bi-door-open" routerLink="/login"> Terminar Sessão</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="divider">
+    <app-sidebar></app-sidebar>
+    <div class="container border px-5 my-5 bg-dark bg-gradient">
+        <br>
+        <h1 class="text-info">Criar Prazo</h1>
+        <form class="my-5">
+            <div class="form-floating mb-3">
+                <select class="form-control form-select" [(ngModel)]="PrazoOBJ.idCodigo" (change)="validaCodigo(PrazoOBJ.idCodigo)" id="idCodigo" name="idCodigo">
+                    <option *ngFor="let c of codigo" value="{{c.id}}">{{c.nome}}</option>
+                </select>
+                <label>Código</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-control form-select" [(ngModel)]="PrazoOBJ.nrProcesso" (change)="validaProcesso(PrazoOBJ.nrProcesso)" id="nrProcesso" name="nrProcesso">
+                    <option *ngFor="let p of processo" value="{{p.nrProcesso}}">{{p.nrProcesso}}</option>
+                </select>
+                <label>Número do Processo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-control form-select" [(ngModel)]="PrazoOBJ.idPrazoCodigo" (change)="validaPrazoCodigo(PrazoOBJ.idPrazoCodigo)" id="idPrazoCodigo" name="idPrazoCodigo">
+                    <option *ngFor="let pc of prazoCodigo" value="{{pc.id}}">{{pc.id}}</option>
+                </select>
+                <label>Prazo Código</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-control form-select" [(ngModel)]="PrazoOBJ.nrArtigo" (change)="validaArtigo(PrazoOBJ.nrArtigo)" id="nrArtigo" name="nrArtigo">
+                    <option *ngFor="let a of artigo" value="{{a.nrArtigo}}">{{a.nome}}</option>
+                </select>
+                <label>Número do Artigo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="dataInicial" type="date" placeholder="dataInicial" [(ngModel)]="PrazoOBJ.dataInicial" [ngModelOptions]="{standalone: true}" required>
+                <label for="dataInicial">Data Inicial</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="dataFinal" type="date" placeholder="dataFinal" [(ngModel)]="PrazoOBJ.dataFinal" [ngModelOptions]="{standalone: true}" required>
+                <label for="dataFinal">Data Final</label>
+            </div>
+            <div class="d-grid">
+                <br><br>
+                <button class="btn bg-success " id="createButton" type="submit" (click) = "postPrazo()">Criar</button>
+                <br>
+                <button class="btn bg-danger" id="cancelButton" (click) = "cancel()">Cancelar</button>
+            </div>
+        </form>
+    </div> 
+</div>

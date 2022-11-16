@@ -1,0 +1,25 @@
+<div class="divider">
+    <app-sidebar></app-sidebar>
+    <div class="container border px-5 my-5 bg-dark bg-gradient">
+        <br>
+        <h1 class="text-info">Criar Tipo de Processo</h1>
+        <form class="my-5">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="nome" type="text" placeholder="Nome do Processo" [(ngModel)]="TipoProcessoOBJ.nome" [ngModelOptions]="{standalone: true}" required>
+                <label for="nome">Nome do Tipo de Processo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-control form-select" [(ngModel)]="TipoProcessoOBJ.idTema" (change)="validaTipoProcesso(TipoProcessoOBJ.idTema)" id="idTema" name="idTema">
+                    <option *ngFor="let t of tema" value="{{t.id}}">{{t.nome}}</option>
+                </select>
+                <label>Tema</label>
+            </div>
+            <div class="d-grid">
+                <br><br>
+                <button class="btn bg-success " id="createButton" type="submit" (click) = "postTipoProcesso()">Criar</button>
+                <br>
+                <button class="btn bg-danger" id="cancelButton" (click) = "cancel()">Cancelar</button>
+            </div>
+        </form>
+    </div> 
+</div>

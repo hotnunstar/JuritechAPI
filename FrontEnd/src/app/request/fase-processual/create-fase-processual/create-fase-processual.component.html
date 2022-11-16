@@ -1,0 +1,39 @@
+<div class="divider">
+    <app-sidebar></app-sidebar>
+    <div class="container px-5 my-5 bg-dark bg-gradient border">
+        <br>
+        <h1 class="text-info">Criar Fase Processual</h1>
+        <form class="my-5">
+            <div class="form-floating mb-3">
+                <select class="form-control form-select" [(ngModel)]="FaseOBJ.idEstado" (change)="validaEstado(FaseOBJ.idEstado)" id="idEstado" name="idEstado">
+                    <option *ngFor="let e of estado" value="{{e.id}}">{{e.nome}}</option>
+                </select>
+                <label>Estado</label>
+            </div>
+            <!-- <div class="form-floating mb-3">
+                <input class="form-control" id="nrProcesso" type="text" placeholder="Número Processo" [(ngModel)]="FaseOBJ.nrProcesso" [ngModelOptions]="{standalone: true}" required>
+                <label for="nrProcesso">Número Processo</label>
+            </div> -->
+            <div class="form-floating mb-3">
+                <select class="form-control form-select" [(ngModel)]="FaseOBJ.nrProcesso" (change)="validaProcesso(FaseOBJ.nrProcesso)" id="nrProcesso" name="nrProcesso">
+                    <option *ngFor="let p of processo" value="{{p.nrProcesso}}">{{p.nrProcesso}}</option>
+                </select>
+                <label>Número Processo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="dataEntrada" type="date" placeholder="DataEntrada" [(ngModel)]="FaseOBJ.dataEntrada" [ngModelOptions]="{standalone: true}" required>
+                <label for="dataEntrada">Data de Entrada</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="dataSaida" type="date" placeholder="DataSaida" [(ngModel)]="FaseOBJ.dataSaida" [ngModelOptions]="{standalone: true}" required>
+                <label for="dataSaida">Data de Saída</label>
+            </div>
+            <div class="d-grid">
+                <br><br>
+                <button class="btn bg-success " id="createButton" type="submit" (click) = "postFase()">Criar</button>
+                <br>
+                <button class="btn bg-danger" id="cancelButton" (click) = "cancel()">Cancelar</button>
+            </div>
+        </form>
+    </div> 
+</div>

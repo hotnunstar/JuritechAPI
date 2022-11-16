@@ -1,0 +1,51 @@
+<div class="divider">
+    <app-sidebar></app-sidebar>
+    <div class="container border px-5 my-5 bg-dark bg-gradient">
+        <br>
+        <h1 class="text-info">Atualizar Artigo</h1>
+        <form class="my-5">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="nrArtigo" name="nrArtigo" type="text" [(ngModel)]="ArtigoOBJ.nrArtigo" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="nrArtigo" class="form-label">Número do Artigo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="nome" name="nome" type="text" [(ngModel)]="ArtigoOBJ.nome" [ngModelOptions]="{standalone: true}" required>
+                <label for="nome">Nome do Artigo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="idCodigo" name="idCodigo" type="text" [(ngModel)]="ArtigoOBJ.idCodigo" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="numeroDoArtigo">Código</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="dias" name="dias" type="text" [(ngModel)]="ArtigoOBJ.dias" [ngModelOptions]="{standalone: true}" required>
+                <label for="dias">Dias</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="meses" name="meses" type="text" [(ngModel)]="ArtigoOBJ.meses" [ngModelOptions]="{standalone: true}" required>
+                <label for="meses">Meses</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="anos" name="anos" type="text" [(ngModel)]="ArtigoOBJ.anos" [ngModelOptions]="{standalone: true}" required>
+                <label for="anos">Anos</label>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block"></label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input check-space" id="ferias" type="checkbox" [(ngModel)]="ArtigoOBJ.ferias" [ngModelOptions]="{standalone: true}" required>
+                    <label class="form-check-label text-white h4" for="ferias">Férias</label>
+                </div>
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input check-space" id="diasNaoUteis" type="checkbox" [(ngModel)]="ArtigoOBJ.diasNaoUteis" [ngModelOptions]="{standalone: true}"required>
+                    <label class="form-check-label text-white h4" for="diasNaoUteis">Dias não úteis</label>
+                </div>
+            </div>
+            <div class="d-grid">
+                <br><br>
+                <button class="btn bg-success " id="createButton" type="submit" (click)="putArtigo()">Atualizar</button>
+                <br>
+                <button class="btn bg-danger" id="cancelButton" (click) = "cancel()">Cancelar</button>
+            </div>
+        </form>
+    </div> 
+</div>

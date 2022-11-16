@@ -1,0 +1,239 @@
+body {
+	font-family: sans-serif;
+}
+
+header {
+	text-align: center;
+}
+
+#calendar {
+    left: 16.9%;
+    top: 4%;
+    position: absolute;
+	width: 90%;	
+}
+.month {
+	text-align: center;
+}
+#calendar a {
+	color: #0d6efd;
+	text-decoration: none;
+}
+
+#calendar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#calendar li {
+	display: block;
+	float: left;
+	width:13%;
+	border: 1px solid #ccc;
+	margin-right: -1px;
+	margin-bottom: -1px;
+}
+
+#calendar ul.weekdays {
+	height: 70px;
+	width: 92%;
+	background: #0d6efd;
+}
+
+#calendar ul.weekdays li {
+	margin-top: 1%; /*align days of the weak*/
+	margin-left:1%; /*align days of the weak*/
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 100%;
+	border: none !important;
+	padding: 10px 6px;
+	color: #fff;
+	font-size: 13px;
+}
+
+#calendar .days li {
+	height: 150px;
+}
+
+#calendar .days li:hover {
+	background: #d3d3d3;
+}
+
+#calendar .date {
+	text-align: center;
+	margin-bottom: 5px;
+	padding: 4px;
+	background: #333;
+	color: #fff;
+	width: 10%;
+	border-radius: 50%;
+	float: right;
+}
+
+#calendar .event {
+	clear: both;
+	display: block;
+	font-size: 85%;
+	border-radius: 5%;
+	padding: 5px;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	line-height: 14px;
+	background: #e4f2f2;
+	border: 1px solid #b5dbdc;
+	color: #009aaf;
+	text-decoration: none;
+}
+
+#calendar .event-desc {
+	color: #666;
+	margin: 9px 0 7px 0;
+	text-decoration: none;	
+}
+
+#calendar .other-month {
+	background: #f5f5f5;
+	color: #666;
+}
+
+
+body {
+    background-color: #f0ecec;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    /*padding: 58px 0 0; */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 16.8%;
+    z-index: 600;
+  }
+  
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
+  
+  .barraTarefas{
+      margin-left: 16.8%;
+      flex-basis: auto;
+  }
+  
+  .corner {
+      margin-left: 75%;
+      padding-left: 1%;
+  }
+   .juriTechTilte{
+        
+       text-decoration: white;
+       text-size-adjust: 10%;
+   }
+  
+   a {text-decoration: none;}
+  
+  
+   .sessao
+   {
+     background-color: rgb(172, 170, 170);
+     position: absolute;
+     top: 50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     border-radius: 15px;
+     color: #fff;
+   }
+  
+   input{
+     padding: 15px;
+     border: none;
+     outline: none;
+   }
+  
+   button
+   {
+     background-color: dodgerblue;
+     border: none;
+     padding: 15px;
+     width: 100%;
+     border-radius: 10px;
+     color: white;
+     font-size: 100%;
+     cursor: pointer;
+   }
+  
+   button:hover
+   {
+     background-color: dodgerblue;
+     align-items: flex-start;
+   }
+  
+   /*Login*/
+   .flexLogin {
+     display: flex;
+     align-items:flex-start;
+   }
+   .containerLogin {
+    
+     display: flex inline-block;
+     position: absolute;
+     top: 50%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     border-radius: 15px;
+     color: #fff;
+   } 
+  
+  
+   .item{
+     background-color: white;
+     width: 50%;
+     height: 50%;
+     padding: 10%;
+     border-radius: 15px;
+   }
+  
+   .item2{
+     background-color: rgb(35, 35, 142);
+     width:50%;
+     height: 50%;
+     padding:10%;
+     border-radius: 15px;
+   }
+  
+  
+   .loginText{
+     text-decoration: solid;
+   }
+  
+   /*Register*/
+   .containerRegister{
+    
+    display: flex inline-block;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    color: #fff;
+  } 
+  
+  .itemR{
+    background-color: rgb(35, 35, 142);
+    width:150%;
+    height: 10%;
+    padding:20%;
+    border-radius: 15px;
+  }
+  
+  
+  
+  

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="JuriTechV2.Models.Artigo">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QUBAAAQQQhQCEAIEAEAQAABQwQAAAAQAQAAEAEFAAAA=</HashCode>
+      <FileName>Models\Artigo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JuriTechV2.Models.Calculadora" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAACgAAgAIAAIBAAAEAQAABAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Models\Calculadora.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JuriTechV2.Models.Codigo" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAgA=</HashCode>
+      <FileName>Models\Codigo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JuriTechV2.Models.Estado" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAgA=</HashCode>
+      <FileName>Models\Estado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JuriTechV2.Models.FaseProcessual">
+    <Position X="2.5" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>CAFAAAAAQAAAAAAAAAAAAAAAQQAAAEEAAAAAAAgBAAA=</HashCode>
+      <FileName>Models\FaseProcessual.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JuriTechV2.Models.Prazo" Collapsed="true">
+    <Position X="11.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAgAAAAIAAAAAAAEAAAAVAgAAFAAAAAAAAQAAQA=</HashCode>
+      <FileName>Models\Prazo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JuriTechV2.Models.PrazoCodigo" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABiAAAAQAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\PrazoCodigo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JuriTechV2.Models.Processo">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQBACgAAQAQAAAAEAAAAAAAEQAAABEAAAAAAAAEAAAo=</HashCode>
+      <FileName>Models\Processo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JuriTechV2.Models.Tema" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAgA=</HashCode>
+      <FileName>Models\Tema.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JuriTechV2.Models.TipoPrazo" Collapsed="true">
+    <Position X="11.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAgA=</HashCode>
+      <FileName>Models\TipoPrazo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JuriTechV2.Models.TipoProcesso" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAEAAgA=</HashCode>
+      <FileName>Models\TipoProcesso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JuriTechV2.Models.Utilizador">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AQACAAAAACAAAAAgAAAAAAAAAAAAAAACAAAAAgEAAgA=</HashCode>
+      <FileName>Models\Utilizador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

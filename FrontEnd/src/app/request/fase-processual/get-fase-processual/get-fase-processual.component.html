@@ -1,0 +1,72 @@
+<div class="divider">
+    <app-sidebar></app-sidebar>
+    <div class="p-4">
+        <div class="row">
+            <div class="col-7">
+                <h1 class="text-info">Fase Processual</h1><br>
+            </div>
+            <div class="container">
+                <div class="row-1">
+                    <div class="col-3">
+                        <a routerLink="/criar-faseprocessual" class="btn btn-info text-white bg-success"><i class="bi bi-plus"></i>Nova Fase Processual</a>
+                    </div>
+                </div>
+                <hr>
+                <form>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input check-space" id="ativasNaoAtivas" type="checkbox" [(ngModel)]="AuxOBJ.ativasNaoAtivas" [ngModelOptions]="{standalone: true}" required>
+                        <label class="form-check-label h4" for="ativasNaoAtivas">Ativas / Não Ativas</label>
+                    </div>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input check-space" id="todas" type="checkbox" [(ngModel)]="AuxOBJ.todas" [ngModelOptions]="{standalone: true}" required>
+                        <label class="form-check-label h4" for="todas">Todas</label>
+                    </div>
+                    <div class="form-floating mb-3 text-white-50 smallInput">
+                        <input class="form-control bg-primary text-white" [(ngModel)]="AuxOBJ.idEst" [ngModelOptions]="{standalone: true}" id="idEst" name="idEst" type="text" placeholder="Id do Estado" required>
+                        <label for="idEst">Id do Estado</label>
+                    </div>
+                    <div class="col-3">
+                        <a class="btn btn-info text-white bg-warning" (click)="getByParam()"><i class="bi bi-search"></i> Filtrar</a>
+                    </div>
+                </form>
+                <hr>  
+                <form>
+                    <div class="form-floating mb-3 text-white-50 smallInput">
+                        <input class="form-control bg-primary text-white" [(ngModel)]="FaseOBJ.nrProcesso" [ngModelOptions]="{standalone: true}" id="nrProcesso" name="nrProcesso" type="text" placeholder="Número do Processo" required>
+                        <label for="nrProcesso">Número do Processo</label>
+                    </div>
+                    <div class="col-3">
+                        <a class="btn btn-info text-white bg-warning" (click)="getByNProc()"><i class="bi bi-search"></i> Filtrar</a>
+                    </div>
+                </form>                
+            </div>
+        </div>
+        <br>
+        <table id="tabela" class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Id Estado</th>
+                    <th>Número do Processo</th>
+                    <th>Data Entrada</th>
+                    <th>Número de Dias</th>
+                    <th>Data Saída</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let fase of faseProcessual">
+                    <th scope="row">{{fase.idEstado}}</th>
+                    <td>{{fase.nrProcesso}}</td>
+                    <td>{{fase.dataEntrada}}</td>
+                    <td>{{fase.nrDias}}</td>
+                    <td>{{fase.dataSaida}}</td>
+                    <td>
+                        <a routerLink="/update-faseprocessual/{{fase.idUtilizador}}/{{fase.nrProcesso}}/{{fase.idEstado}}/{{fase.dataEntrada}}" class="edit">
+                            <i class="bi bi-pencil"></i>
+                        </a>
+                    </td>
+            </tbody>
+        </table>
+    </div>
+</div>

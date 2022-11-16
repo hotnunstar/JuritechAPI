@@ -1,0 +1,39 @@
+<div class="divider">
+    <app-sidebar></app-sidebar>
+    <div class="container px-5 my-5 bg-dark bg-gradient border">
+        <br>
+        <h1 class="text-info">Apagar Prazo</h1>
+        <form class="my-5">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="idCodigo" type="text" placeholder="idCodigo" [(ngModel)]="PrazoOBJ.idCodigo" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="idCodigo">Código</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="nrProcesso" type="text" placeholder="nrProcesso" [(ngModel)]="PrazoOBJ.nrProcesso" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="nrProcesso">Número do Processo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="idPrazoCodigo" type="text" placeholder="idPrazoCodigo" [(ngModel)]="PrazoOBJ.idPrazoCodigo" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="idPrazoCodigo">Prazo Código</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="nrArtigo" type="text" placeholder="nrArtigo" [(ngModel)]="PrazoOBJ.nrArtigo" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="nrArtigo">Número do Artigo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="dataInicial" type="date" placeholder="dataInicial" [(ngModel)]="PrazoOBJ.dataInicial" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="dataInicial">Data Inicial</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="dataFinal" type="date" placeholder="dataFinal" [(ngModel)]="PrazoOBJ.dataFinal" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="dataFinal">Data Final</label>
+            </div>
+            <div class="d-grid">
+                <br><br>
+                <button class="btn bg-success " id="createButton" type="submit" (click) = "deletePrazo()">Apagar</button>
+                <br>
+                <button class="btn bg-danger" id="cancelButton" (click) = "cancel()">Cancelar</button>
+            </div>
+        </form>
+    </div> 
+</div>

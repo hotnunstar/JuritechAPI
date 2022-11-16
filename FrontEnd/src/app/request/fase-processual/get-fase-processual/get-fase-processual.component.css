@@ -1,0 +1,8 @@
+.smallInput {
+  width: 30%;
+}
+
+.divider {
+  display: flex; 
+  flex-direction: row;
+}

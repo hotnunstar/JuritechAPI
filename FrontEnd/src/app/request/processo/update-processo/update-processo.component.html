@@ -1,0 +1,48 @@
+<div class="divider">
+    <app-sidebar></app-sidebar>
+    <div class="container border px-5 my-5 bg-dark bg-gradient">
+        <br>
+        <h1 class="text-info">Atualizar Processo</h1>
+        <form class="my-5">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="nrProcesso" name="nrProcesso" type="text" [(ngModel)]="processoOBJ.nrProcesso" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="nrProcesso" class="form-label">Número do Processo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-control form-select" [(ngModel)]="processoOBJ.idTipo" (change)="validaTipoProcesso(processoOBJ.idTipo)" id="idTipo" name="idTipo">
+                    <option *ngFor="let t of tipo" value="{{t.id}}">{{t.nome}}</option>
+                </select>
+                <label>Tipo do Processo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="nome" name="nome" type="text" [(ngModel)]="processoOBJ.nome" [ngModelOptions]="{standalone: true}" required>
+                <label for="nome">Nome do Processo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="valor" name="valor" type="text" [(ngModel)]="processoOBJ.valor" [ngModelOptions]="{standalone: true}" required>
+                <label for="valor">Valor</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="notas" name="notas" type="text" [(ngModel)]="processoOBJ.notas" [ngModelOptions]="{standalone: true}" required>
+                <label for="notas">Notas</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="dataEntrada" type="date" placeholder="DataEntrada" [(ngModel)]="processoOBJ.dataEntrada" [ngModelOptions]="{standalone: true}" required>
+                <label for="dataEntrada">Data de Entrada</label>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block"></label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input check-space" id="estado" type="checkbox" [(ngModel)]="processoOBJ.estado" [ngModelOptions]="{standalone: true}"required>
+                    <label class="form-check-label text-white h4" for="estado">Estado</label>
+                </div>
+            </div>
+            <div class="d-grid">
+                <br><br>
+                <button class="btn bg-success " id="createButton" type="submit" (click)="updateProcesso()">Atualizar</button>
+                <br>
+                <button class="btn bg-danger" id="cancelButton" (click) = "cancel()">Cancelar</button>
+            </div>
+        </form>
+    </div> 
+</div>

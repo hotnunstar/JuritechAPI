@@ -1,0 +1,31 @@
+<div style="display: flex; flex-direction: row;">
+    <app-sidebar></app-sidebar>
+    <div class="container px-5 my-5 bg-dark bg-gradient">
+        <br>
+        <h1 class="text-info">Atualizar Fase Processual</h1>
+        <form class="my-5">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="idEstado" type="text" placeholder="id Estado" [(ngModel)]="FaseOBJ.idEstado" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="idEstado">Id Estado</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="nrProcesso" type="text" placeholder="Número Processo" [(ngModel)]="FaseOBJ.nrProcesso" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="nrProcesso">Nº do Processo</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="dataEntrada" type="date" placeholder="DataEntrada" [(ngModel)]="FaseOBJ.dataEntrada" [ngModelOptions]="{standalone: true}" readonly>
+                <label for="dataEntrada">Data de Entrada</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" id="dataSaida" type="date" placeholder="DataSaida" [(ngModel)]="FaseOBJ.dataSaida" [ngModelOptions]="{standalone: true}" required>
+                <label for="dataSaida">Data de Saída</label>
+            </div>
+            <div class="d-grid">
+                <br><br>
+                <button class="btn bg-success " id="createButton" type="submit" (click)="putFase()">Atualizar</button>
+                <br>
+                <button class="btn bg-danger" id="cancelButton" (click) = "cancel()">Cancelar</button>
+            </div>
+        </form>
+    </div> 
+</div>
